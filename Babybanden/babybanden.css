@@ -170,14 +170,14 @@ div[id$="__pp_title_brand"] {
   overflow:hidden;
 }
 
-.pp_wishlist {
+.product-page .pp_wishlist {
   padding-right: 8px;
   width: 3.5rem;
   background: inherit;
   transition: background 150ms ease-in;
 }
 
-.pp_wishlist:hover {
+.product-page .pp_wishlist:hover {
   background: var(--primary-color-hover) !important;
 }
 
