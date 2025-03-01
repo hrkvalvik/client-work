@@ -1,0 +1,233 @@
+@font-face {
+  font-family: 'coolvetica_lt';
+  src: url('https://www.babybanden.no/users/babybandensand_mystore_no/fonts/coolvetica_lt-webfont.woff2') format('woff2'),
+    url('https://www.babybanden.no/users/babybandensand_mystore_no/fonts/coolvetica_lt-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --border-sm: 4px;
+  --border-md: 8px;
+  --border-lg: 12px;
+  --border-full: 999px;
+
+  --brand-font: 'coolvetica_lt';
+
+  --primary-color: #0B828E;
+  --primary-color-hover: #096872;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--brand-font);
+}
+
+.__icon_wrapper[data-subblock-key="custom_icon"] {
+  display: flex;
+  flex-direction: row;
+  gap: .3rem;
+  justify-content: start;
+  align-items: center;
+  border-radius: var(--border-sm);
+  /* background: rgba(255,255,255, .1); */
+}
+
+.product-page .__header_static  {
+  background: #0B828E !important;
+}
+
+.product-page {
+  background-color: #f9f9f9 !important;
+}
+
+.__icon_wrapper>* {
+  color: white !important;
+}
+
+.index-page .page-wrapper {
+  background-image: linear-gradient(180deg, var(--primary-color) 0%, #48c7c9 10%, #f9f9f9 20%);
+}
+
+input.__search_input_field::-webkit-input-placeholder,
+input.__search_input_field::placeholder {
+  color: #ffffff !important;
+}
+
+.__search_input_field {
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .04)) !important;
+}
+
+.__open_search_section svg {
+  fill: white;
+  opacity: .7;
+}
+
+.open_search_section svg :where(input#open_search:focus) {
+  opacity: 1;
+}
+
+._megamenu-buton svg {
+  display: none;
+}
+
+._megamenu-buton {
+  display: flex;
+  align-items: center;
+
+}
+
+._megamenu-buton::after {
+  content: url('https://www.babybanden.no/users/babybandensand_mystore_no/icons/chevron-right.png');
+  transform: rotate(0deg);
+  width: 22px;
+  height: 22px;
+  transform: scale(.8);
+  filter: invert(100%) brightness(200%);
+}
+
+
+.__header_section>*,
+.__header_icons_block svg {
+  color: #ffffff !important;
+  fill: #ffffff;
+}
+
+.__header_section .__header_logo_block {
+  filter: invert(100%) brightness(120%);
+}
+
+.__productslist_section {
+  background-color: transparent !important;
+}
+
+.__productslist>.container {
+  background: white;
+  padding: 2rem;
+  border-radius: var(--border-lg);
+}
+
+.__slider_section {
+  background-color: transparent !important;
+}
+
+.__slider_section .splide__track {
+  border-radius: var(--border-lg);
+  overflow: hidden;
+  position: relative;
+  outline: 8px solid rgba(130, 230, 230, .7);
+
+  box-shadow: 0px 38px 30px -27px rgb(5 122 132 / 59%);
+
+}
+
+header .__header_static div[id$="__header_menu_button"] {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
+
+.__pp_title_block:has(.text-heading-2) {
+  line-height: 1.25;
+  letter-spacing: .1rem;
+  margin-bottom: 1.5rem;
+}
+
+div[id$="__pp_title_brand"] {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+}
+
+.discount_ribbon {
+  display: none;
+}
+.__pp_main_sections {
+  position: relative;
+}
+
+.product-page section[id$="__product_slider"] {
+  padding: 1rem;
+  border-radius: var(--border-lg);
+}
+
+.__product_purchase_section_section {
+  background: #fafafa !important;
+  padding: 1rem 1rem 1.5rem 1rem;
+}
+
+/* --- PRODUCT PAGE --- */
+
+#add2cart .__pp_title_block {
+  font-family: var(--brand-font);
+}
+
+.product-page #add2cart section.__pp_purchase_buttons_block #addToCartWrapper {
+  border-radius: var(--border-full);
+  overflow:hidden;
+}
+
+.pp_wishlist {
+  padding-right: 8px;
+  width: 3.5rem;
+  background: inherit;
+  transition: background 150ms ease-in;
+}
+
+.pp_wishlist:hover {
+  background: var(--primary-color-hover) !important;
+}
+
+/* --- BABYBANDEN FX --- */
+
+._megamenu-buton,
+.__icon_wrapper[data-subblock-key="custom_icon"] {
+  position: relative;
+}
+
+._megamenu-buton small::after,
+.__icon_wrapper[data-subblock-key="custom_icon"]::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  border-radius: var(--border-sm);
+  height: 2px;
+  background: #ffffff !important;
+  ;
+  bottom: 0;
+  left: 0;
+  filter: unset;
+  opacity: 0;
+  transition:
+    width 150ms ease-in,
+    opacity 100ms ease-in;
+
+}
+
+._megamenu-buton small:hover::after,
+.__icon_wrapper[data-subblock-key="custom_icon"]:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border-radius: var(--border-sm);
+  height: 2px;
+  background: #ffffff !important;
+  ;
+  bottom: 0;
+  left: 0;
+  filter: unset;
+  opacity: .8;
+}
+
+header .__open_search_section input  {
+  box-shadow: 0px 12px 26px -10px rgba(3, 55, 60, .2);
+  transition: box-shadow 200ms ease-in;
+} 
+
+header .__open_search_section input:focus  {
+  box-shadow: 0px 12px 26px -10px rgba(3, 55, 60, .6);
+  transition: box-shadow 150ms ease-in;
+} 
