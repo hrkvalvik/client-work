@@ -14,12 +14,20 @@
 
   --brand-font: 'coolvetica_lt';
 
+  /*
   --primary-color: #0B828E;
   --primary-color-hover: #096872;
   --page-bg: #f9f9f9;
   --burnt-orange: #b0320e;
   --green: #00a896;
   --magenta: #e10e58;
+  */
+  --primary-color: #0261A1;
+  --primary-color-hover: #1E0C46;
+  --page-bg: #E6DACA;
+  --burnt-orange: #FA5A36;
+  --green: #004D45;
+  --magenta: #A9225C;
 }
 
 h1,
@@ -33,8 +41,8 @@ h5 {
 body {
   background-color: var(--page-bg) !important;
 }
-/* --- HEADER --- */
 
+/* --- HEADER --- */
 .__icon_wrapper[data-subblock-key="custom_icon"] {
   display: flex;
   flex-direction: row;
