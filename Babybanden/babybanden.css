@@ -191,7 +191,7 @@ div[id$="__pp_title_brand"] {
   border-bottom: 1px solid rgba(10,10,10, .2);
 }
 
-.product-page .__pp_description_block > p + button.__pp_description_block_button {
+.product-page .__pp_description_block button.__pp_description_block_button {
   margin-top: .5rem !important;
 }
 
