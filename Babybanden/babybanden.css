@@ -277,6 +277,54 @@ border-radius: var(--border-full);
   color: #103737;
 }
 
+/* --- PRODUCT PAGE TABS --- */
+.product_info_section:has(> div[id$="__pp_tabs"]) {
+  background: var(--page-bg) !important;
+}
+
+.product-page div[id$="__pp_tabs"] li.tab-control a {
+  font-family: var(--brand-font);
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+}
+
+.product-page div[id$="__pp_tabs"] li.tab-control.active {
+font-weight: bold;
+position: relative;
+}
+
+.product-page div[id$="__pp_tabs"] li.tab-control:not(.active) {
+position: relative;
+  opacity: .8;
+}
+
+.product-page div[id$="__pp_tabs"] li.tab-control.active::before {
+  content: "";
+  top: 50%;
+  left: 2px;
+  transform: translateY(-50%);
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: var(--border-full);
+  background-color: var(--primary-color);
+  transition: opacity 300ms ease-in,
+    left 100ms ease-in;
+}
+
+.product-page div[id$="__pp_tabs"] li.tab-control:not(.active)::before {
+  content: "";
+  top: 50%;
+  left: -8px;
+  transform: translateY(-50%);
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: var(--border-full);
+  background-color: var(--primary-color);
+  opacity: 0;
+}
+
 /* --- BABYBANDEN FX --- */
 
 ._megamenu-buton,
