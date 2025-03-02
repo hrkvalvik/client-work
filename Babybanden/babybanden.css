@@ -16,6 +16,10 @@
 
   --primary-color: #0B828E;
   --primary-color-hover: #096872;
+  --page-bg: #f9f9f9;
+  --burnt-orange: #b0320e;
+  --green: #00a896;
+  --magenta: #e10e58;
 }
 
 h1,
@@ -41,7 +45,7 @@ h5 {
 }
 
 .product-page {
-  background-color: #f9f9f9 !important;
+  background-color: var(--page-bg) !important;
 }
 
 .__icon_wrapper>* {
@@ -49,7 +53,7 @@ h5 {
 }
 
 .index-page .page-wrapper {
-  background-image: linear-gradient(180deg, var(--primary-color) 0%, #48c7c9 10%, #f9f9f9 20%);
+  background-image: linear-gradient(180deg, var(--primary-color) 0%, #48c7c9 10%, var(--page-bg) 20%);
 }
 
 input.__search_input_field::-webkit-input-placeholder,
@@ -133,7 +137,7 @@ header .__header_static div[id$="__header_menu_button"] {
 .__pp_title_block:has(.text-heading-2) {
   line-height: 1.25;
   letter-spacing: .1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 7px;
 }
 
 div[id$="__pp_title_brand"] {
@@ -179,6 +183,98 @@ div[id$="__pp_title_brand"] {
 
 .product-page .pp_wishlist:hover {
   background: var(--primary-color-hover) !important;
+}
+
+
+
+.__tab-wrapper .__tab-content > h2 {
+  border-bottom: 1px solid rgba(10,10,10, .2);
+}
+
+.product-page .__pp_description_block > p + button.__pp_description_block_button {
+  margin-top: .5rem !important;
+}
+
+#add2cart .__best-prices {
+  margin-bottom: 1rem;
+  padding: .5rem;
+  border-radius: var(--border-sm);
+  color: var(--primary-color);
+}
+
+#add2cart .__best-prices svg {
+  fill: var(--primary-color);
+}
+
+.products_price {
+  color: var(--magenta);
+}
+
+.price-old {
+  color: #262626 !important;
+  font-weight: 300 !important;
+  font-style: italic;
+}
+
+.product-page .prices > .flex > span.text-sm {
+  background-color: var(--green) !important;
+  border: 0;
+  border-radius: var(--border-full);
+  color: #ffffff !important;
+  padding: 6px 12px;
+  
+}
+
+#add2cart .posted_in {
+  position: relative;
+  color: var(--magenta) !important;
+  padding: .5rem;
+  background-color: #ffffff;
+  border-radius: var(--border-sm);
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin-bottom: 1rem;
+}
+
+#add2cart .posted_in::before {
+  content: "\2727";
+  font-size: 22px;
+}
+
+#add2cart .posted_in strong[id="bonuspoeng_strong"] {
+padding: 2px 8px;
+background: var(--magenta);
+color: white;
+border-radius: var(--border-full);
+}
+
+.__pp_stockstatus_block {
+  position: relative;
+  font-size: .825rem !important;
+  font-weight: 400 !important;
+  display: flex;
+  align-items: center;
+  padding: .725rem .5rem .5rem .5rem;
+  background-color: rgba(72, 199, 201, .1);
+  border-radius: var(--border-sm) var(--border-sm) 0px 0px;
+  margin-bottom: 0;
+  color: #103737 !important;
+
+}
+
+.__pp_stockstatus_block::before {
+  content: "Nettlager:";
+  padding-right: 4px;
+  font-weight: 600;
+}
+
+.__pp_pstock_sync_block li {
+  font-size: .826rem !important;
+  padding: .5rem .5rem .725rem .5rem;
+  background-color: rgba(72, 199, 201, .1);
+  border-radius: 0px 0px var(--border-sm) var(--border-sm);
+  color: #103737;
 }
 
 /* --- BABYBANDEN FX --- */
