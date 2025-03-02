@@ -202,7 +202,10 @@ div[id$="__pp_title_brand"] {
   background: var(--primary-color-hover) !important;
 }
 
-
+.product-page .__tab-wrapper {
+  box-shadow: none !important;
+  background-color: var(--page-bg) !important;
+}
 
 .product-page .pp_wishlist {
   padding-right: 8px;
