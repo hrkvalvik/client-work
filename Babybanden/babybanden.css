@@ -470,7 +470,7 @@ header .__open_search_section input:focus {
 }
 
 .product-thumb-info .pb_price:has(+ .__cc-price) > * {
-  color: #262626;
+  color: #262626 !important;
 }
 .product-thumb-info .h-8 {
   position: absolute;
