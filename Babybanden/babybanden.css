@@ -218,7 +218,13 @@ div[id$="__pp_title_brand"] {
   background: var(--primary-color-hover) !important;
 }
 
+.product-page #add2cart .__pp_purchase_variants_block button{
+  border-radius: var(--border-full);
+}
 
+.product-page #add2cart .__pp_purchase_variants_block span:has(svg) {
+  padding-right: 1rem;
+}
 
 .__tab-wrapper .__tab-content>h2 {
   border-bottom: 1px solid rgba(10, 10, 10, .2);
