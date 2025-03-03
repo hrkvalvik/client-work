@@ -243,11 +243,11 @@ div[id$="__pp_title_brand"] {
   margin-bottom: 1rem;
   padding: .5rem;
   border-radius: var(--border-sm);
-  color: var(--primary-color);
+  color: #303030;
 }
 
 #add2cart .__best-prices svg {
-  fill: var(--primary-color);
+  fill: #303030;
 }
 
 .products_price {
