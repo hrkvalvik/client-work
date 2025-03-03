@@ -506,6 +506,8 @@ header .__open_search_section input:focus {
   top: 0;
   position: absolute;
   backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
 }
 
 /* --- CUSTOMER CLUB PRICES --- */
