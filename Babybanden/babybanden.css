@@ -442,7 +442,7 @@ header .__open_search_section input:focus {
   opacity: 1;
 }
 
-.index-page section.bb_pop_cats .__typography_block h2 a {
+.index-page section.bb_pop_cats .__typography_block h3 a {
   display: flex;
   justify-content: center;
   padding-block: 2rem;
