@@ -226,6 +226,11 @@ div[id$="__pp_title_brand"] {
 
 .product-page .__pp_description_block button.__pp_description_block_button {
   margin-top: .5rem !important;
+  color: var(--primary-color) !important;
+}
+
+.product-page .__pp_description_block_text {
+  color: #262626 !important;
 }
 
 #add2cart .__best-prices {
