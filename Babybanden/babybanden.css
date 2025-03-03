@@ -453,7 +453,8 @@ header .__open_search_section input:focus {
   font-family: var(--brand-font);
   color: #262626;
 }
-.product-thumb-info-content .pb_price:not(+ .__cc-price) p:first-child {
+
+.product-thumb-info-content .pb_price:not(:has(+ .__cc-price)) > p:first-child {
   color: var(--magenta) !important;
 }
 
