@@ -447,3 +447,87 @@ header .__open_search_section input:focus {
   justify-content: center;
   padding-block: 2rem;
 }
+
+/* --- PRODUCT BOXES --- */ 
+.product-thumb-info-content .pb_category_and_brand {
+  font-family: var(--brand-font);
+  color: #262626;
+}
+.product-thumb-info-content .pb_price:not(+ .__cc-price) p:first-child {
+  color: var(--magenta) !important;
+}
+
+.product-thumb-info-content .pb_price {
+  margin-top: .5rem;
+}
+
+.product-thumb-info {
+  border: 1px solid #ebebeb;
+  border-radius: var(--border-lg);
+  padding-top: 1rem;
+  isolation: isolate;
+}
+
+.product-thumb-info .pb_price:has(+ .__cc-price) > * {
+  color: #262626;
+}
+.product-thumb-info .h-8 {
+  position: absolute;
+}
+
+.product-thumb-info .__cc-price {
+  padding: .5rem;
+  background-color: var(--magenta);
+  line-height: 1rem !important;
+  width: fit-content;
+  border-radius: var(--border-md);
+  color: #ffffff;
+  position: absolute;
+  top: 260px;
+  z-index: 20;
+}
+
+.product-thumb-info .__cc-price::before {
+  content: "\2727";
+  font-size: 14px;
+}
+
+.product-thumb-info .__cc-price > span {
+  line-height: unset !important;
+}
+
+ .new_ribbon {
+  font-size: 1rem;
+  background-color: #0b828e5e !important;
+  color: #03272b;
+  padding: .5rem .7255rem;
+  border-radius: var(--border-md);
+  left: .5rem;
+  top: 0;
+  position: absolute;
+  backdrop-filter: blur(8px);
+}
+
+/* --- CUSTOMER CLUB PRICES --- */
+
+.prices:has( + .club-price) > .flex > .products_price,
+.prices:has( + .club-price) > .flex > .price-old {
+  color: #262626 !important;
+}
+
+.product-page #add2cart .club-price {
+  font-size: 1.2rem;
+  line-height: 1rem;
+  margin-top: 14px;
+  border-radius: var(--border-lg);
+  padding: 1rem;
+  color: #ffffff;
+  background-color: var(--magenta);
+}
+
+.product-page #add2cart .club-price::before {
+  content: "\2727";
+  font-size: 22px;
+  padding-right: .5rem;
+}
+
