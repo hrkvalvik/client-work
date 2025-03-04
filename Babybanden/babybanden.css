@@ -310,16 +310,24 @@ div[id$="__pp_title_brand"] {
   align-items: center;
   padding: .725rem .5rem .5rem .5rem;
   background-color: rgba(72, 199, 201, .1);
-  border-radius: var(--border-sm) var(--border-sm) 0px 0px;
+  border-radius: 0;
   margin-bottom: 0;
   color: #103737 !important;
 }
 
-.product-page #add2cart .__pp_usp_block {
-  background-color: rgba(72, 199, 201, .1);
+.product-page #add2cart {
+  & .__pp_usp_block {
   color: #103737 !important;
+  background-color: rgba(72, 199, 201, .1);
   font-size: .825rem !important;
   border-bottom: 1px solid rgba(72, 199, 201, .2);
+  border-radius: var(--border-sm) var(--border-sm) 0px 0px;
+  }
+
+  & .__pp-usp-icon {
+    display: flex; 
+    align-items: center;
+  }
 }
 
 .__pp_stockstatus_block::before {
