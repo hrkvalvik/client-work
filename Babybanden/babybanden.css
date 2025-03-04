@@ -140,9 +140,16 @@ input.__search_input_field::placeholder {
 }
 
 .__productslist>.container {
-  background: white;
+  background: #ffffff;
   padding: 2rem;
   border-radius: var(--border-lg);
+}
+
+@media screen and (max-width: 768px) {
+  .__productslist>.container {
+    padding: 1rem;
+    border-radius: var(--border-lg);
+  }
 }
 
 .__slider_section {
