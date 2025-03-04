@@ -719,3 +719,14 @@ header .__open_search_section input:focus {
   aspect-ratio: 1;
   border-radius: var(--border-md);
 }
+
+.__shopping-cart .cart-bottom div:has( > .__shopping-continue-button)::before {
+  content: "+ fast frakt 99,-";
+  display: flex;
+  justify-content:center;
+  padding-bottom: 1rem;
+  margin-top: -1rem;
+  color: #262626;
+  font-style: italic; 
+  font-size: .825rem;
+}
