@@ -315,7 +315,7 @@ div[id$="__pp_title_brand"] {
   color: #103737 !important;
 }
 
-.__pp-usp-text {
+.product-page #add2cart .__pp_usp_block {
   background-color: rgba(72, 199, 201, .1);
   color: #103737 !important;
   font-size: .825rem !important;
