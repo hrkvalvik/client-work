@@ -313,7 +313,13 @@ div[id$="__pp_title_brand"] {
   border-radius: var(--border-sm) var(--border-sm) 0px 0px;
   margin-bottom: 0;
   color: #103737 !important;
+}
 
+.__pp-usp-text {
+  background-color: rgba(72, 199, 201, .1);
+  color: #103737 !important;
+  font-size: .825rem !important;
+  border-bottom: 1px solid rgba(72, 199, 201, .2);
 }
 
 .__pp_stockstatus_block::before {
