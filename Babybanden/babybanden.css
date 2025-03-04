@@ -20,6 +20,7 @@
   --burnt-orange: #b0320e;
   --green: #00a896;
   --magenta: #e10e58;
+  --magenta-hover: #b10b45;
 
   /* - Retro color palette
   --primary-color: #0261A1;
@@ -321,6 +322,46 @@ div[id$="__pp_title_brand"] {
   color: #103737;
 }
 
+/* --- PRODUCT PAGE CUSTOMER CLUB --- */
+
+.product-page .customer-club {
+  color: #262626;
+  border: 1px solid var(--magenta);
+  border-radius: var(--border-md);
+  background-color: #f9f9f9;
+}
+
+.product-page .customer-club ul {
+  list-style-type: none !important;
+  padding-block: .5rem;
+}
+
+.product-page .customer-club ul li::before {
+  content: "\2727";
+  color: var(--magenta);
+  padding-right: .5rem;
+}
+
+
+.product-page .customer-club-content > p > img {
+  filter: 
+    hue-rotate(151deg)
+    brightness(78%)
+    saturate(160%);
+  margin-left: -1rem;
+}
+
+.product-page .customer-club-sign-up {
+  border-radius: var(--border-md);
+  background: var(--magenta);
+  color: #ffffff;
+  transition: background 150ms ease-in;
+}
+
+.product-page .customer-club-sign-up:hover {
+  background-color: var(--magenta-hover);
+}
+
 /* --- PRODUCT PAGE TABS --- */
 .product_info_section:has(> div[id$="__pp_tabs"]) {
   background: var(--page-bg) !important;
@@ -508,7 +549,22 @@ header .__open_search_section input:focus {
   position: absolute;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
+}
 
+.product-thumb-info .wishlist {
+  top: -.5rem;
+  right: .5rem;
+  background: #d209102b;
+  backdrop-filter:blur(8px);
+  border-radius: var(--border-md);
+  overflow: hidden;
+  height: 36px;
+  width: 36px;
+}
+
+.product-thumb-info .wishlist svg {
+  height: 1.3rem;
+  fill: #860935;
 }
 
 /* --- CUSTOMER CLUB PRICES --- */
