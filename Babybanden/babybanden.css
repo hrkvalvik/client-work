@@ -351,6 +351,20 @@ div[id$="__pp_title_brand"] {
   color: #103737;
 }
 
+@media screen and (max-width: 768px) {
+  .product-page #add2cart .__pp_price_block .prices {
+    justify-content: center;
+  }
+
+  .__pp_usp_block,
+  .__pp_stockstatus_block,
+  .__pp_pstock_sync_block .text-xs {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
 /* --- PRODUCT PAGE CUSTOMER CLUB --- */
 
 .product-page .customer-club {
