@@ -751,3 +751,65 @@ header .__open_search_section input:focus {
   font-style: italic; 
   font-size: .825rem;
 }
+
+/* --- Separate Lipscore section on product page --- */
+
+.product-page .product_review_section .__tab-wrapper ul li:has(> a:not(.__lipscore_tab_link)) {
+  display: none;
+}
+
+.product-page .product_review_section .__tab-wrapper li a.__lipscore_tab_link{
+  color: #000000;
+}
+
+.product-page .product_review_section .__tab-wrapper li a.__lipscore_tab_link::before{
+  content: "\2605";
+  font-size: 1rem;
+  padding-right: .5rem;
+  color: rgb(254, 184, 70);
+}
+
+
+.product-page .product_review_section .__tab-wrapper > div.__tab-content > div:has(:not(.__lipscore_tab)) {
+  display: none;
+}
+
+.product-page .product_review_section .__tab-wrapper > div.__tab-content > .__lipscore_tab {
+  display: block !important;
+}
+
+/* --- Blog posts on index --- */
+.__blog-post-mini {
+  border-radius: var(--border-lg);
+  overflow: hidden;
+}
+
+.__blog-post-title {
+  text-align: left;
+  font-family: var(--brand-font);
+    display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  min-height:68px;
+  max-height: 68px;
+}
+
+.__post-excerpt {
+  text-align: left;
+  font-size: .825rem;
+  font-weight: 400 !important;
+}
+
+.__post-excerpt {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+} 
+
+.__blog-post-content {
+  margin: 0;
+  padding: 1rem;
+  color: #262626 !important;
+}
