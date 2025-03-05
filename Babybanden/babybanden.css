@@ -409,7 +409,7 @@ div[id$="__pp_title_brand"] {
 }
 
 .product-page div[id$="__pp_tabs"] li.tab-control.active {
-  font-weight: bold;
+  color: #030303;
   position: relative;
 }
 
@@ -759,7 +759,7 @@ header .__open_search_section input:focus {
 }
 
 .product-page .product_review_section .__tab-wrapper li a.__lipscore_tab_link{
-  color: #000000;
+  color: #030303;
 }
 
 .product-page .product_review_section .__tab-wrapper li a.__lipscore_tab_link::before{
