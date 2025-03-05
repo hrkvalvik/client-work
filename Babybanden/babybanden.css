@@ -789,9 +789,6 @@ header .__open_search_section input:focus {
 }
 
 
-.product-page .product_review_section .__tab-wrapper > div.__tab-content > div:has(:not(.__lipscore_tab)) {
-  display: none;
-}
 
 @media screen and (max-width: 768px) {
   .product-page .product_review_section .__tab-content>h2:has(+ .__description_tab),
@@ -802,6 +799,9 @@ header .__open_search_section input:focus {
 }
 
 @media (min-width: 800px) {
+  .product-page .product_review_section .__tab-wrapper > div.__tab-content > div:has(:not(.__lipscore_tab)) {
+    display: none;
+  }
   .product-page .product_review_section .__tab-wrapper>div.__tab-content>.__lipscore_tab {
     display: block !important;
   }
