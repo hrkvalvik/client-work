@@ -189,6 +189,43 @@ ul.header_links li a:hover {
   }
 }
 
+/* --- Customer Club Banner Index --- */
+.customer-club-banner {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  border: 1px solid var(--magenta);
+  border-radius: var(--border-md);
+  background-color: #f9f9f9;
+  gap: 1rem;
+
+  & p {
+    margin: 0;
+  }
+
+  & a {
+    color: var(--magenta);
+  }
+
+  & a:hover {
+    color: var(--magenta-hover);
+  }
+}
+
+.customer-club-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: .5rem;
+}
+
+.customer-club-banner img {
+  filter:
+    hue-rotate(151deg) brightness(78%) saturate(160%);
+  width: 180px;
+  height: auto;
+}
+
 /* --- PRODUCT PAGE --- */
 .__pp_title_block:has(.text-heading-2) {
   line-height: 1.25;
