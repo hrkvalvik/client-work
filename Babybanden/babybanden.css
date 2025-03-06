@@ -190,16 +190,6 @@ ul.header_links li a:hover {
 }
 
 /* --- Customer Club Banner Index --- */
-
-@media screen and (max-width: 768px) {
-  .customer-club-banner {
-    flex-direction: column;
-  }
-
-  .customer-club-info {
-    flex-direction: column;
-  }
-}
 .customer-club-banner {
   display: flex;
   flex-direction: row;
@@ -239,6 +229,16 @@ ul.header_links li a:hover {
     hue-rotate(151deg) brightness(78%) saturate(160%);
   width: 280px;
   height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .customer-club-banner {
+    flex-direction: column;
+  }
+
+  .customer-club-info {
+    flex-direction: column;
+  }
 }
 
 /* --- PRODUCT PAGE --- */
