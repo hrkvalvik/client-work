@@ -190,14 +190,26 @@ ul.header_links li a:hover {
 }
 
 /* --- Customer Club Banner Index --- */
+
+@media screen and (max-width: 768px) {
+  .customer-club-banner {
+    flex-direction: column;
+  }
+
+  .customer-club-info {
+    flex-direction: column;
+  }
+}
 .customer-club-banner {
   display: flex;
+  flex-direction: row;
   padding: 1rem;
   align-items: center;
   border: 1px solid var(--magenta);
   border-radius: var(--border-md);
-  background-color: #f9f9f9;
-  gap: 1rem;
+  background-color: #fff8fb;
+  gap: 1.5rem;
+  color: #1b1b1b;
 
   & p {
     margin: 0;
@@ -214,9 +226,11 @@ ul.header_links li a:hover {
 
 .customer-club-info {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: start;
+  justify-content: space-between;
   gap: .5rem;
+  width: 100%;
 }
 
 .customer-club-banner img {
