@@ -203,7 +203,7 @@ ul.header_links li a:hover {
 .customer-club-banner {
   display: flex;
   flex-direction: row;
-  padding: 1rem;
+  padding: .5rem;
   align-items: center;
   border: 1px solid var(--magenta);
   border-radius: var(--border-md);
@@ -231,12 +231,13 @@ ul.header_links li a:hover {
   justify-content: space-between;
   gap: .5rem;
   width: 100%;
+  padding-inline: .5rem;
 }
 
 .customer-club-banner img {
   filter:
     hue-rotate(151deg) brightness(78%) saturate(160%);
-  width: 180px;
+  width: 280px;
   height: auto;
 }
 
