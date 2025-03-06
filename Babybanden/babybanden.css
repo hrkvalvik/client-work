@@ -238,6 +238,7 @@ ul.header_links li a:hover {
 
   .customer-club-info {
     flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -909,4 +910,14 @@ header .__open_search_section input:focus {
   margin: 0;
   padding: 1rem;
   color: #262626 !important;
+}
+
+/* --- Footer --- */
+.__footer-title .__heading_block {
+  text-align: left !important;
+} 
+
+.__footer-title img {
+  width: clamp(300px, 450px, 100%);
+  margin-top: 48px;
 }
