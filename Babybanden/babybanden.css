@@ -936,7 +936,7 @@ header .__open_search_section input:focus {
 }
 
 .index-page .launch_countdown h1 > span {
-  font-size: clamp(3.5rem, 8vw, 8vw) !important;
+  font-size: clamp(2.5rem, 8vw, 8vw) !important;
   letter-spacing: 3px;
   font-weight: 900;
 }
