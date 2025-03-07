@@ -545,6 +545,12 @@ div[id$="__pp_title_brand"] {
   position: relative;
 }
 
+._megamenu-buton:hover,
+.__icon_wrapper[data-subblock-key="custom_icon"]:hover {
+  background: rgba(255,255,255,.1);
+}
+
+/*
 ._megamenu-buton small::after,
 .__icon_wrapper[data-subblock-key="custom_icon"]::after {
   content: "";
@@ -575,7 +581,7 @@ div[id$="__pp_title_brand"] {
   left: 0;
   filter: unset;
   opacity: .8;
-}
+}  */
 
 header .__open_search_section input {
   box-shadow: 0px 12px 26px -10px rgba(3, 55, 60, .2);
