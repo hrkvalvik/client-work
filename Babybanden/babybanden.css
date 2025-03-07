@@ -19,6 +19,7 @@
   --page-bg: #f9f9f9;
   --burnt-orange: #b0320e;
   --green: rgb(0,168,150);
+  --green-opacity: rgba(0,168,150, .4);
   --magenta: #e10e58;
   --magenta-hover: #b10b45;
   --pink: #F06292;
@@ -675,7 +676,7 @@ header .__open_search_section input:focus {
 
 .discount_ribbon {
   font-size: 1rem;
-  background-color: var(--green)/50% !important;
+  background-position: var(--green-opacity) !important;
   color: #03272b;
   padding: .5rem .7255rem;
   border-radius: var(--border-md);
