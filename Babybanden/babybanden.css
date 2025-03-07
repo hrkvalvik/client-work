@@ -264,6 +264,10 @@ div[id$="__pp_title_brand"] {
   border-radius: var(--border-lg);
 }
 
+.product-page .discount_ribbon {
+  display: none;
+}
+
 .__product_purchase_section_section {
   background: #fafafa !important;
   padding: 1rem 1rem 1.5rem 1rem;
