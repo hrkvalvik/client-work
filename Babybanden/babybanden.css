@@ -683,7 +683,7 @@ header .__open_search_section input:focus {
 
 .discount_ribbon {
   font-size: 1rem;
-  background-position: var(--green-opacity) !important;
+  background-color: var(--green-opacity) !important;
   color: #03272b;
   padding: .5rem .7255rem;
   border-radius: var(--border-md);
