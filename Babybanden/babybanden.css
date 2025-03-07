@@ -18,7 +18,7 @@
   --primary-color-hover: #096872;
   --page-bg: #f9f9f9;
   --burnt-orange: #b0320e;
-  --green: #00a896;
+  --green: rgb(0,168,150);
   --magenta: #e10e58;
   --magenta-hover: #b10b45;
   --pink: #F06292;
@@ -656,10 +656,22 @@ header .__open_search_section input:focus {
   line-height: unset !important;
 }
 
-.new_ribbon,
-.discount_ribbon {
+.new_ribbon {
   font-size: 1rem;
   background-color: #0b828e5e !important;
+  color: #03272b;
+  padding: .5rem .7255rem;
+  border-radius: var(--border-md);
+  left: .5rem;
+  top: 0;
+  position: absolute;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.discount_ribbon {
+  font-size: 1rem;
+  background-color: var(--green)/50% !important;
   color: #03272b;
   padding: .5rem .7255rem;
   border-radius: var(--border-md);
