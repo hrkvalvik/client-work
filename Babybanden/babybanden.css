@@ -255,10 +255,6 @@ div[id$="__pp_title_brand"] {
   top: 1rem;
 }
 
-.discount_ribbon {
-  display: none;
-}
-
 .__pp_main_sections {
   position: relative;
 }
@@ -660,7 +656,8 @@ header .__open_search_section input:focus {
   line-height: unset !important;
 }
 
-.new_ribbon {
+.new_ribbon,
+.discount_ribbon {
   font-size: 1rem;
   background-color: #0b828e5e !important;
   color: #03272b;
