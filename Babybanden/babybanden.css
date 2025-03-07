@@ -59,12 +59,14 @@ div:has(div > div.breadcrumb) {
 /* --- HEADER --- */
 .__icon_wrapper[data-subblock-key="custom_icon"] {
   display: flex;
+  position: relative;
   flex-direction: row;
   gap: .3rem;
   justify-content: start;
   align-items: center;
   border-radius: var(--border-sm);
-  /* background: rgba(255,255,255, .1); */
+  padding: 9px 8px;
+  transition: background 150ms ease-in;
 }
 
 body:not(.index-page) .__header_static {
@@ -101,12 +103,6 @@ input.__search_input_field::placeholder {
 
 ._megamenu-buton svg {
   display: none;
-}
-
-._megamenu-buton {
-  display: flex;
-  align-items: center;
-
 }
 
 ._megamenu-buton::after {
@@ -540,9 +536,13 @@ div[id$="__pp_title_brand"] {
 
 /* --- BABYBANDEN FX --- */
 
-._megamenu-buton,
-.__icon_wrapper[data-subblock-key="custom_icon"] {
+._megamenu-buton {
   position: relative;
+  transition: background 150ms ease-in;
+  display: flex;
+  align-items: center;
+  border-radius: var(--border-sm);
+  overflow: hidden;
 }
 
 ._megamenu-buton:hover,
