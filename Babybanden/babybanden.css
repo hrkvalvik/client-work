@@ -647,7 +647,6 @@ header .__open_search_section input:focus {
 .product-thumb-info .__product-ribbons {
   display: flex;
   flex-direction: column;
-  gap: .5rem;
   position: absolute;
   left: 1rem;
   top: 1rem;
