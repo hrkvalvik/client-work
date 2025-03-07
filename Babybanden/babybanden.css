@@ -632,6 +632,15 @@ header .__open_search_section input:focus {
   isolation: isolate;
 }
 
+.product-thumb-info .__product-ribbons {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+}
+
 .product-thumb-info .pb_price:has(+ .__cc-price)>* {
   color: #262626 !important;
 }
@@ -667,9 +676,7 @@ header .__open_search_section input:focus {
   color: #03272b;
   padding: .5rem .7255rem;
   border-radius: var(--border-md);
-  left: .5rem;
-  top: 0;
-  position: absolute;
+  position: relative;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
@@ -680,9 +687,7 @@ header .__open_search_section input:focus {
   color: #03272b;
   padding: .5rem .7255rem;
   border-radius: var(--border-md);
-  left: .5rem;
-  top: 0;
-  position: absolute;
+  position: relative;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
